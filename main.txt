@@ -46,7 +46,6 @@ getgenv().Script = {
         }
     },
     ['Checks'] = {
-        KnockedChecks = true,
         TargetDeath = true,
         PlayerDeath = true
     },
