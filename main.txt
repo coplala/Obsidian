@@ -1,59 +1,63 @@
 script_key = "RPYaromJlrtXQqGJsTsBuwtyVSjXiOjC";
 
-getgenv().Script = {    
-    ['Intro'] = { 
-        Introduction = true,
-    },
+getgenv().Script = {
     ['Keybind'] = {
         Aimbot = "C",
     },
     ['Aimbot'] = {
-        Prediction = 0.188551,
+        Prediction = 0.11,
 
         ['Shake'] = {
             Enabled = false,
-            Amount = 0
+            Amount = 87
         },
         ['Smoothness'] = {
-            Amount = 0.088211,
-            Style = "Elastic",
+            Amount = 1,
+            Style = "Sine",
             Direction = "InOut"
         },
         ['FieldOfView'] = {
-            Enabled = false, -- // Visibility
-            Size = 400,
-            Color = Color3.fromRGB(255, 255, 255),
+            Enabled = true, -- // Visibility
+            Size = 100,
+            Color = Color3.fromRGB(163, 101, 101),
             Transparency = 1,
             Filled = false
         }
     },
     ['Silent'] = {
-        Prediction = 0.116,
+        Prediction = 0.14,
         Detection = {Close = 35, Mid = 65, Far = math.huge}, -- // These are distance values, NOT FOV.
 
         ['SpecificDis'] = {
             Enabled = false,
-            Prediction = {Close = 0.138, Mid = 0.1247, Far = 0.123}
+            Prediction = {Close = 0.11271, Mid = 0.1238915416, Far = 0.138249}
         },
         ['Offsets'] = {
-            Jump = {Amount = -0.15},
-            Fall = {Amount = 0},
+            Jump = {Amount = -0.20},
+            Fall = {Amount = 0.12},
         }
     },
     ['HitBox'] = {
         Part = "HumanoidRootPart",
 
         ['Air'] = {
-            Enabled = false,
-            AirPart = "RightLowerLeg"
+            Enabled = true,
+            AirPart = "HumanoidRootPart"
         }
     },
     ['Checks'] = {
-        PlayerVisible = true,
-        PlayerKnocked = true
+        KnockedChecks = true,
+        TargetDeath = true,
+        PlayerDeath = true
     },
     ['Resolver'] = {
+        Enabled = true,
+    },
+    ['Macro'] = {
         Enabled = false,
+        Keybind = "X",
+        Speed = 0.001,
+        Type = "First" -- // "First", "Third"
     },
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/49ab419c0398087238cf87edbe581492.lua"))()
