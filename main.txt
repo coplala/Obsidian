@@ -1,5 +1,5 @@
-luarmor_key="zmtKSUSkkgsnugvfzoCNeEYUGjUIngCT";
-getgenv().luarmor_key = luarmor_key; -- DONT REMOVE ANYTHING OR ELSE IT WONT WORK.
+luarmor_key="zmtKSUSkkgsnugvfzoCNeEYUGjUIngCT"; -- put your real key that it gave u in their
+getgenv().luarmor_key = luarmor_key; -- DONT REMOVE ANYTHING OR ELSE IT won't WORK.
 getgenv().Script = {
     ['Intro'] = { 
         Introduction = true,
@@ -58,3 +58,4 @@ getgenv().Script = {
         Enabled = false,
     },
 }
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/49ab419c0398087238cf87edbe581492.lua"))()
