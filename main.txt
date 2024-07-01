@@ -1,4 +1,4 @@
-script_key = "RPYaromJlrtXQqGJsTsBuwtyVSjXiOjC";
+script_key = "KEY";
 
 getgenv().Script = {
     ['Keybind'] = {
@@ -60,4 +60,5 @@ getgenv().Script = {
         Type = "First" -- // "First", "Third"
     },
 }
+
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/49ab419c0398087238cf87edbe581492.lua"))()
